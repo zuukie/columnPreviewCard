@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px 0px;
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 450px;
+  padding: 55px 55px;
+}
+.container .card img {
+  width: 70px;
+}
+.container .card h2 {
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 95%);
+  font-size: 40px;
+  font-family: "Big Shoulders Display", cursive;
+}
+.container .card p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+}
+.container .card button {
+  height: 40px;
+  width: 55%;
+  border: none;
+  border-radius: 50px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.container .sedans {
+  border-radius: 10px 10px 0px 0px;
+  background-color: hsl(31deg, 77%, 52%);
+}
+.container .sedans button {
+  color: hsl(31deg, 77%, 52%);
+}
+.container .suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.container .suvs button {
+  color: hsl(184deg, 100%, 22%);
+}
+.container .luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0px 0px 10px 10px;
+}
+.container .luxury button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+@media (min-width: 680px) {
+  .container .sedans {
+    border-radius: 10px 0px 0px 10px;
+  }
+  .container .suvs {
+    border-radius: 0px 10px 10px 0px;
+  }
+  .container .luxury {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+@media (min-width: 1020px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+  }
+  .container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+  }
+  .container .card {
+    height: 550px;
+  }
+  .container .card h2 {
+    font-size: 46px;
+  }
+  .container .card p {
+    font-size: 17px;
+  }
+  .container .card button {
+    height: 45px;
+    width: 125px;
+    transition: color 0.2s, background-color 0.2s;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .container .card button:hover {
+    color: hsla(0deg, 0%, 100%, 0.75);
+    background: none;
+    border: 2px solid white;
+  }
+  .container .sedans {
+    border-radius: 10px 0px 0px 10px;
+  }
+  .container .suvs {
+    border-radius: 0px;
+  }
+  .container .luxury {
+    border-radius: 0px 10px 10px 0px;
+  }
+}/*# sourceMappingURL=main.css.map */
